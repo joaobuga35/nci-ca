@@ -1,0 +1,30 @@
+/* ===============================
+   AdventureGear Co. Color System
+   Forest + Earth Theme
+================================ */
+
+:root {
+  /* Brand Colors */
+  --color-primary: #2f4f3e; /* Forest Green */
+  --color-secondary: #6b8f71; /* Moss Green */
+
+  /* Backgrounds */
+  --color-bg: #f5f1e8; /* Sand Beige */
+  --color-bg-alt: #e6e2d8; /* Soft Stone */
+
+  /* Text */
+  --color-text: #1f1f1f; /* Deep Charcoal */
+  --color-text-muted: #666666; /* Muted Gray */
+
+  /* Accent / Call to Action */
+  --color-reminder: #d9822b; /* Burnt Orange */
+  --color-highlight: #e0b04c; /* Warm Gold */
+
+  /* Feedback Colors */
+  --color-success: #198754;
+  --color-danger: #dc3545;
+
+  /* UI Extras */
+  --border-radius: 12px;
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
