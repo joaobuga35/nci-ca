@@ -1,30 +1,89 @@
-/* ===============================
+/* 
    AdventureGear Co. Color System
-   Forest + Earth Theme
-================================ */
+   Forest + Earth Theme 
+*/
+
+/* Add Global styles to remove the default styles from my html file */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth font rendering */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Remove underline and default link colors */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Images responsive by default */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Lists clean */
+ul {
+  list-style: none;
+}
+
+/* Defining variables to make the color scheme consistent and easier to maintain. */
 
 :root {
   /* Brand Colors */
-  --color-primary: #2f4f3e; /* Forest Green */
-  --color-secondary: #6b8f71; /* Moss Green */
+  --color-primary: #2f4f3e;
+  --color-secondary: #6b8f71;
 
-  /* Backgrounds */
-  --color-bg: #f5f1e8; /* Sand Beige */
-  --color-bg-alt: #e6e2d8; /* Soft Stone */
+  /* Background Colors */
+  --color-bg: #f5f1e8;
+  --color-bg-alt: #e6e2d8;
 
-  /* Text */
-  --color-text: #1f1f1f; /* Deep Charcoal */
-  --color-text-muted: #666666; /* Muted Gray */
+  /* Typography */
+  --color-text: #1f1f1f;
+  --color-text-muted: #666666;
 
-  /* Accent / Call to Action */
-  --color-reminder: #d9822b; /* Burnt Orange */
-  --color-highlight: #e0b04c; /* Warm Gold */
+  /* Accent Colors */
+  --color-accent: #d9822b;
+  --color-highlight: #e0b04c;
 
-  /* Feedback Colors */
+  /* Feedback */
   --color-success: #198754;
   --color-danger: #dc3545;
 
-  /* UI Extras */
-  --border-radius: 12px;
+  /* UI Styling */
+  --radius: 12px;
+  --radius-lg: 20px;
+
   --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-strong: 0 8px 20px rgba(0, 0, 0, 0.18);
+
+  /* Animation */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-slow: 0.6s ease-in-out;
+}
+
+body {
+  opacity: 0;
+  animation: fadeInPage 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
