@@ -1,0 +1,28 @@
+.bg-adjust {
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow-soft);
+}
+
+/* .align-center {
+  align-content: center;
+} */
+
+.logo {
+  height: 100px;
+  width: auto;
+  padding-top: 10px;
+}
+
+@media (min-width: 380px) {
+  .nav-bar-adjust {
+    height: 100px;
+    padding: 8px;
+  }
+}
+
+@media (min-width: 994px) {
+  .nav-bar-adjust {
+    height: 80px;
+    padding: 8px;
+  }
+}

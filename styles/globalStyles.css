@@ -26,12 +26,6 @@ a {
   color: inherit;
 }
 
-/* Images responsive by default */
-img {
-  max-width: 100%;
-  display: block;
-}
-
 /* Lists clean */
 ul {
   list-style: none;
