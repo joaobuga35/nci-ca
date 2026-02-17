@@ -55,10 +55,6 @@ body {
   width: 100%;
 }
 
-.height-test {
-  height: 500px;
-}
-
 .navbar {
   z-index: 1100;
 }
@@ -77,6 +73,37 @@ body {
 
 .nav-height {
   height: 70px;
+}
+
+.text-intro {
+  font-size: var(--text-base);
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+/* Section About us */
+.section-about {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Card image fixed height for consistency */
+.card-image-fixed {
+  height: 13.75rem;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.card-content-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Media queries for responsive adjustments */
