@@ -2,6 +2,15 @@ function hello(){
     alert("Hello World!");
 }
 
-var nameN = prompt("What is your name?");
+var num1 = parseInt(prompt("Enter the first person's age?"));
+var num2 = parseInt(prompt("Enter the second person's age?"));
 
-alert("Hello " + nameN + "! Welcome to Adventure Gear Co.!");
+num1 
+
+num1 > num2 ? alert("The first person is older than the second person.") : alert("The second person is older than the first person.");
+num1 < 18 || num2 < 18 ? alert("At least one of the people is a minor.") : alert("Both people are adults.");
+
+// alert("The product of the two numbers is: " + (num1 * num2));
+// alert("The sum of the two numbers is: " + (num1 + num2));
+// alert("The difference of the two numbers is: " + (num1 - num2));
+// alert("The quotient of the two numbers is: " + (num1 / num2));

@@ -36,6 +36,7 @@ ul {
 :root {
   /* Brand Colors */
   --color-primary: #2f4f3e;
+  --color-primary-medium: #4a7d6d;
   --color-secondary: #6b8f71;
 
   /* Background Colors */
@@ -78,4 +79,242 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Button Styles - Adventure Gear Co. */
+
+/* Primary Button - Forest Green (Main CTA) */
+.btn-adventure-primary {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border: none;
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: var(--radius);
+  transition: var(--transition-fast);
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-adventure-primary:hover {
+  background-color: #1f3a2d;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
+}
+
+.btn-adventure-primary:active {
+  transform: translateY(0);
+}
+
+/* Primary Medium Button - Mid-tone Green (Balanced contrast) */
+.btn-adventure-primary-medium {
+  background-color: var(--color-primary-medium);
+  color: var(--color-bg);
+  border: none;
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: var(--radius);
+  transition: var(--transition-fast);
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-adventure-primary-medium:hover {
+  background-color: #3a6955;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
+}
+
+.btn-adventure-primary-medium:active {
+  transform: translateY(0);
+}
+
+/* Secondary Button - Light Green (Alternative CTA) */
+.btn-adventure-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-bg);
+  border: none;
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: var(--radius);
+  transition: var(--transition-fast);
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-adventure-secondary:hover {
+  background-color: #5a7960;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
+}
+
+.btn-adventure-secondary:active {
+  transform: translateY(0);
+}
+
+/* Accent Button - Warm Orange/Brown (Featured Actions) */
+.btn-adventure-accent {
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: var(--radius);
+  transition: var(--transition-fast);
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-adventure-accent:hover {
+  background-color: #c1711e;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
+}
+
+.btn-adventure-accent:active {
+  transform: translateY(0);
+}
+
+/* Highlight Button - Gold (Premium/Hero CTA) */
+.btn-adventure-highlight {
+  background-color: var(--color-highlight);
+  color: var(--color-primary);
+  border: none;
+  padding: 12px 28px;
+  font-weight: 700;
+  border-radius: var(--radius);
+  transition: var(--transition-fast);
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-adventure-highlight:hover {
+  background-color: #d4a83a;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
+}
+
+.btn-adventure-highlight:active {
+  transform: translateY(0);
+}
+
+/* Outline Buttons */
+.btn-outline-adventure {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  padding: 10px 26px;
+  font-weight: 600;
+  border-radius: var(--radius);
+  transition: var(--transition-fast);
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-outline-adventure:hover {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-outline-adventure:active {
+  transform: scale(0.98);
+}
+
+/* Outline Secondary */
+.btn-outline-secondary-adventure {
+  background-color: transparent;
+  color: var(--color-secondary);
+  border: 2px solid var(--color-secondary);
+  padding: 10px 26px;
+  font-weight: 600;
+  border-radius: var(--radius);
+  transition: var(--transition-fast);
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-outline-secondary-adventure:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-bg);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Danger Button - Alert/Destructive Actions */
+.btn-adventure-danger {
+  background-color: var(--color-danger);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: var(--radius);
+  transition: var(--transition-fast);
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-adventure-danger:hover {
+  background-color: #bb2d3b;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
+}
+
+/* Success Button - Positive Actions */
+.btn-adventure-success {
+  background-color: var(--color-success);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: var(--radius);
+  transition: var(--transition-fast);
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-adventure-success:hover {
+  background-color: #157347;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
+}
+
+/* Size Variants */
+.btn-adventure-lg {
+  padding: 16px 40px;
+  font-size: 1.1rem;
+}
+
+.btn-adventure-sm {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+}
+
+/* Disabled State */
+.btn-adventure-primary:disabled,
+.btn-adventure-primary-medium:disabled,
+.btn-adventure-secondary:disabled,
+.btn-adventure-accent:disabled,
+.btn-adventure-highlight:disabled,
+.btn-adventure-danger:disabled,
+.btn-adventure-success:disabled,
+.btn-outline-adventure:disabled,
+.btn-outline-secondary-adventure:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
 }

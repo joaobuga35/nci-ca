@@ -1,4 +1,13 @@
 /* Navbar content */
+body {
+  padding-top: 70px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+  }
+}
 
 .bg-adjust {
   background-color: var(--color-bg);
@@ -6,17 +15,25 @@
 }
 
 .logo {
-  height: 100px;
+  height: 70px;
   width: auto;
-  padding-top: 10px;
+  padding-top: 5px;
+}
+
+/* Navbar container - let Bootstrap handle flex naturally */
+.nav-bar-adjust {
+  padding: 6px 20px;
+  display: flex;
+  align-items: center;
 }
 
 /* Background layout */
 
 .menu-header {
-  max-width: 100vw;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 120px 20px;
   height: 650px;
-  padding: 160px 160px;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/menu.webp);
@@ -24,22 +41,108 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.text-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .height-test {
   height: 500px;
 }
 
-@media (min-width: 380px) {
+.navbar {
+  z-index: 1100;
+}
+/* Text content */
+
+.main-title {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  color: var(--color-bg);
+}
+
+.p-text-bg {
+  font-size: 1.5rem;
+  color: var(--color-bg);
+}
+
+.nav-height {
+  height: 70px;
+}
+
+/* Media queries for responsive adjustments */
+
+@media (max-width: 768px) {
+  .nav-height {
+    height: auto;
+  }
+  .logo {
+    height: 85px;
+    padding-top: 8px;
+  }
+
   .nav-bar-adjust {
-    height: 100px;
-    padding: 8px;
+    padding: 8px 40px;
+  }
+
+  .menu-header {
+    padding: 120px 40px;
   }
 }
 
-@media (min-width: 994px) {
+@media (min-width: 768px) {
+  .nav-height {
+    height: auto;
+  }
+  .logo {
+    height: 85px;
+    padding-top: 8px;
+  }
+
   .nav-bar-adjust {
-    height: 80px;
-    padding: 8px;
+    padding: 8px 40px;
+  }
+
+  .menu-header {
+    padding: 120px 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-height {
+    height: 70px;
+  }
+  .logo {
+    height: 100px;
+    padding-top: 10px;
+  }
+
+  .nav-bar-adjust {
+    padding: 10px 60px;
+  }
+  .menu-header {
+    padding: 120px 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-height {
+    height: 70px;
+  }
+  .nav-bar-adjust {
+    padding: 10px 100px;
+  }
+
+  .menu-header {
+    padding: 120px 100px;
   }
 }
