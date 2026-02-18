@@ -16,12 +16,16 @@
     ></script>
     <link rel="stylesheet" href="./styles/globalStyles.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
     <title>Contact us</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-adjust">
-        <div class="container-fluid nav-bar-adjust align-center">
+    <header class="header-margin">
+      <!-- make navbar fixed and light so it floats above the background on all viewports -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-adjust fixed-top nav-height"
+      >
+        <div class="container-fluid nav-bar-adjust">
           <a class="navbar-brand" href="#"
             ><img
               class="logo"
@@ -40,7 +44,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="./index.html"
                   >Home</a
@@ -53,20 +57,128 @@
                 <a class="nav-link active" href="./contact.html">Contact</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </nav>
     </header>
+
+    <main class="d-flex align-items-center py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+            <div class="contact-card">
+              <h2 class="mb-4 contact-title">Contact Us</h2>
+              <form id="contactForm" novalidate>
+                <div class="mb-3">
+                  <label for="name" class="form-label contact-label"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control contact-input"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label contact-label"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control contact-input"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label contact-label"
+                    >Phone</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control contact-input"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="queryType" class="form-label contact-label"
+                    >Query Type</label
+                  >
+                  <select
+                    class="form-select contact-input"
+                    id="queryType"
+                    required
+                  >
+                    <option value="" disabled selected>Select a topic</option>
+                    <option value="booking">Booking</option>
+                    <option value="payment">Payment</option>
+                    <option value="general">General Info</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="mb-4">
+                  <label for="message" class="form-label contact-label"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control contact-input"
+                    id="message"
+                    rows="4"
+                    placeholder="Type your message (min. 20 characters)"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn-adventure-primary w-100">
+                  Submit
+                </button>
+              </form>
+
+              <div
+                id="successMsg"
+                class="contact-feedback contact-feedback--success d-none"
+              >
+                <span>&#10003;</span> Your message has been sent successfully!
+              </div>
+              <div
+                id="errorMsg"
+                class="contact-feedback contact-feedback--error d-none"
+              >
+                <span>&#10007;</span> Please fill in all required fields!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const name = document.getElementById("name").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const phone = document.getElementById("phone").value.trim();
+          const queryType = document.getElementById("queryType").value;
+          const message = document.getElementById("message").value.trim();
+
+          const successMsg = document.getElementById("successMsg");
+          const errorMsg = document.getElementById("errorMsg");
+
+          if (!name || !email || !phone || !queryType || message.length < 20) {
+            successMsg.classList.add("d-none");
+            errorMsg.classList.remove("d-none");
+          } else {
+            errorMsg.classList.add("d-none");
+            successMsg.classList.remove("d-none");
+            this.reset();
+          }
+        });
+    </script>
   </body>
 </html>
