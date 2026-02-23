@@ -16,12 +16,15 @@
     ></script>
     <link rel="stylesheet" href="./styles/globalStyles.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/products.css" />
     <title>Products: Adventure Gear Co.</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-adjust">
-        <div class="container-fluid nav-bar-adjust align-center">
+    <header class="header-margin">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-adjust fixed-top nav-height"
+      >
+        <div class="container-fluid container-adjust">
           <a class="navbar-brand" href="#"
             ><img
               class="logo"
@@ -40,7 +43,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="./index.html"
                   >Home</a
@@ -53,20 +56,331 @@
                 <a class="nav-link" href="./contact.html">Contact</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </nav>
     </header>
+    <main class="container-adjust">
+      <section class="section-products">
+        <h1>Our Products</h1>
+        <p class="p-products">
+          At Adventure Gear Co., we offer a wide range of high-quality outdoor
+          gear designed to enhance your adventures. Whether you're a seasoned
+          explorer or just starting out, we have the perfect equipment to suit
+          your needs. From durable backpacks and tents to reliable camping
+          stoves and versatile outdoor clothing, our products are built to
+          withstand the toughest conditions and help you make the most of your
+          outdoor experiences. Explore our collection and gear up for your next
+          adventure today!
+        </p>
+        <div class="filter"></div>
+
+        <div class="container-adjust">
+          <div class="row g-4 w-100">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img
+                  src="./images/gears.jpg"
+                  class="card-img-top card-image-fixed"
+                  alt="Gears"
+                />
+                <div class="card-body card-content-display">
+                  <h5 class="card-title">Camping Gear</h5>
+                  <p class="card-text">
+                    From tents to sleeping bags, find everything you need for a
+                    comfortable night under the stars.
+                  </p>
+                  <a href="#" class="btn btn-adventure-primary-medium"
+                    >See More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img
+                  src="./images/hiking1.avif"
+                  class="card-img-top card-image-fixed"
+                  alt="Hiking"
+                />
+                <div class="card-body card-content-display">
+                  <h5 class="card-title">Hiking Apparel</h5>
+                  <p class="card-text">
+                    Stay comfortable and protected on the trails with our
+                    durable hiking clothing.
+                  </p>
+                  <a href="#" class="btn btn-adventure-primary-medium"
+                    >See More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img
+                  src="./images/footwear.jpg"
+                  class="card-img-top card-image-fixed"
+                  alt="Footwear"
+                />
+                <div class="card-body card-content-display">
+                  <h5 class="card-title">Footwear</h5>
+                  <p class="card-text">
+                    Whether you're hitting the trails or exploring the city, our
+                    footwear collection has you covered.
+                  </p>
+                  <a href="#" class="btn btn-adventure-primary-medium"
+                    >See More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-adjust">
+          <div class="row g-4 w-100">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img
+                  src="./images/gears.jpg"
+                  class="card-img-top card-image-fixed"
+                  alt="Gears"
+                />
+                <div class="card-body card-content-display">
+                  <h5 class="card-title">Camping Gear</h5>
+                  <p class="card-text">
+                    From tents to sleeping bags, find everything you need for a
+                    comfortable night under the stars.
+                  </p>
+                  <a href="#" class="btn btn-adventure-primary-medium"
+                    >See More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img
+                  src="./images/hiking1.avif"
+                  class="card-img-top card-image-fixed"
+                  alt="Hiking"
+                />
+                <div class="card-body card-content-display">
+                  <h5 class="card-title">Hiking Apparel</h5>
+                  <p class="card-text">
+                    Stay comfortable and protected on the trails with our
+                    durable hiking clothing.
+                  </p>
+                  <a href="#" class="btn btn-adventure-primary-medium"
+                    >See More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img
+                  src="./images/footwear.jpg"
+                  class="card-img-top card-image-fixed"
+                  alt="Footwear"
+                />
+                <div class="card-body card-content-display">
+                  <h5 class="card-title">Footwear</h5>
+                  <p class="card-text">
+                    Whether you're hitting the trails or exploring the city, our
+                    footwear collection has you covered.
+                  </p>
+                  <a href="#" class="btn btn-adventure-primary-medium"
+                    >See More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-adjust">
+          <div class="row g-4 w-100">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img
+                  src="./images/gears.jpg"
+                  class="card-img-top card-image-fixed"
+                  alt="Gears"
+                />
+                <div class="card-body card-content-display">
+                  <h5 class="card-title">Camping Gear</h5>
+                  <p class="card-text">
+                    From tents to sleeping bags, find everything you need for a
+                    comfortable night under the stars.
+                  </p>
+                  <a href="#" class="btn btn-adventure-primary-medium"
+                    >See More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img
+                  src="./images/hiking1.avif"
+                  class="card-img-top card-image-fixed"
+                  alt="Hiking"
+                />
+                <div class="card-body card-content-display">
+                  <h5 class="card-title">Hiking Apparel</h5>
+                  <p class="card-text">
+                    Stay comfortable and protected on the trails with our
+                    durable hiking clothing.
+                  </p>
+                  <a href="#" class="btn btn-adventure-primary-medium"
+                    >See More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img
+                  src="./images/footwear.jpg"
+                  class="card-img-top card-image-fixed"
+                  alt="Footwear"
+                />
+                <div class="card-body card-content-display">
+                  <h5 class="card-title">Footwear</h5>
+                  <p class="card-text">
+                    Whether you're hitting the trails or exploring the city, our
+                    footwear collection has you covered.
+                  </p>
+                  <a href="#" class="btn btn-adventure-primary-medium"
+                    >See More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-adjust">
+          <div class="row g-4 w-100">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img
+                  src="./images/gears.jpg"
+                  class="card-img-top card-image-fixed"
+                  alt="Gears"
+                />
+                <div class="card-body card-content-display">
+                  <h5 class="card-title">Camping Gear</h5>
+                  <p class="card-text">
+                    From tents to sleeping bags, find everything you need for a
+                    comfortable night under the stars.
+                  </p>
+                  <a href="#" class="btn btn-adventure-primary-medium"
+                    >See More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img
+                  src="./images/hiking1.avif"
+                  class="card-img-top card-image-fixed"
+                  alt="Hiking"
+                />
+                <div class="card-body card-content-display">
+                  <h5 class="card-title">Hiking Apparel</h5>
+                  <p class="card-text">
+                    Stay comfortable and protected on the trails with our
+                    durable hiking clothing.
+                  </p>
+                  <a href="#" class="btn btn-adventure-primary-medium"
+                    >See More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img
+                  src="./images/footwear.jpg"
+                  class="card-img-top card-image-fixed"
+                  alt="Footwear"
+                />
+                <div class="card-body card-content-display">
+                  <h5 class="card-title">Footwear</h5>
+                  <p class="card-text">
+                    Whether you're hitting the trails or exploring the city, our
+                    footwear collection has you covered.
+                  </p>
+                  <a href="#" class="btn btn-adventure-primary-medium"
+                    >See More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-adjust">
+          <div class="row g-4 w-100">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img
+                  src="./images/gears.jpg"
+                  class="card-img-top card-image-fixed"
+                  alt="Gears"
+                />
+                <div class="card-body card-content-display">
+                  <h5 class="card-title">Camping Gear</h5>
+                  <p class="card-text">
+                    From tents to sleeping bags, find everything you need for a
+                    comfortable night under the stars.
+                  </p>
+                  <a href="#" class="btn btn-adventure-primary-medium"
+                    >See More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img
+                  src="./images/hiking1.avif"
+                  class="card-img-top card-image-fixed"
+                  alt="Hiking"
+                />
+                <div class="card-body card-content-display">
+                  <h5 class="card-title">Hiking Apparel</h5>
+                  <p class="card-text">
+                    Stay comfortable and protected on the trails with our
+                    durable hiking clothing.
+                  </p>
+                  <a href="#" class="btn btn-adventure-primary-medium"
+                    >See More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img
+                  src="./images/footwear.jpg"
+                  class="card-img-top card-image-fixed"
+                  alt="Footwear"
+                />
+                <div class="card-body card-content-display">
+                  <h5 class="card-title">Footwear</h5>
+                  <p class="card-text">
+                    Whether you're hitting the trails or exploring the city, our
+                    footwear collection has you covered.
+                  </p>
+                  <a href="#" class="btn btn-adventure-primary-medium"
+                    >See More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

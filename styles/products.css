@@ -1,0 +1,15 @@
+.section-products {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-products {
+  font-size: 1.2rem;
+  color: var(--color-text);
+  text-align: center;
+  max-width: 70%;
+  margin-bottom: 2rem;
+}
