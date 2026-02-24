@@ -1,6 +1,6 @@
 // Some repositories that I used as a reference from my own GitHub and open source free to use.
 // Source: https://github.com/joaobuga35/Pet-info
-// Source:https://github.com/joaobuga35/Open-music-dark-mode
+// Source: https://github.com/joaobuga35/Open-music-dark-mode
 
 // created this function to handle all the buttons once because if I add a new one this is alreay made to deal with this situation.
 function initializeFilter() {
