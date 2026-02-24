@@ -24,8 +24,7 @@ body {
 /* Background layout */
 
 .menu-header {
-  margin: 0 auto;
-  max-width: 100%;
+  width: 100%;
   padding: 120px 20px;
   height: 650px;
   background-image:
@@ -173,6 +172,18 @@ body {
     height: 70px;
   }
   .container-adjust {
+    padding: 10px 100px;
+  }
+
+  .menu-header {
+    padding: 120px 100px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container-adjust {
+    max-width: 1600px;
+    margin: 0 auto;
     padding: 10px 100px;
   }
 

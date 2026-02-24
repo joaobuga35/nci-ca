@@ -38,3 +38,10 @@ span {
 .animation-container {
   animation: fadeInPage 0.8s ease-in-out forwards;
 }
+
+@media (min-width: 1600px) {
+  .container-adjust {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
