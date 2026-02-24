@@ -3,12 +3,6 @@ body {
   padding-top: 70px;
 }
 
-@media (min-width: 992px) {
-  body {
-    padding-top: 0;
-  }
-}
-
 .bg-adjust {
   background-color: var(--color-bg);
   box-shadow: var(--shadow-soft);
@@ -53,6 +47,13 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.p-intro-company {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--color-bg);
+  margin-bottom: 2rem;
 }
 
 .navbar {
@@ -107,6 +108,12 @@ body {
 }
 
 /* Media queries for responsive adjustments */
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+  }
+}
 
 @media (max-width: 768px) {
   .nav-height {
