@@ -47,6 +47,7 @@ function handleSubmit(event) {
   event.preventDefault();
   event.stopPropagation();
   // Selecting all the input fields and the textarea to validate them later.
+  const form = document.getElementById("contactForm");
   const name = document.getElementById("name");
   const email = document.getElementById("email");
   const phone = document.getElementById("phone");
@@ -57,6 +58,8 @@ function handleSubmit(event) {
   // I selected succes and error messages to show them later depending on the validation of the fields.
   const successMsg = document.getElementById("successMsg");
   const errorMsg = document.getElementById("errorMsg");
+
+  let allFieldsValid = true;
   // For each to check all the fields and set a new class to help the user to identify which field is wrong also has been added a regex to validade the email.
   // I also used this to add the class and remove it when the user corrects the fields.
   // Regex is pattern matching that is used to validate the format.
@@ -72,14 +75,18 @@ function handleSubmit(event) {
       (field === message && field.value.trim().length < 20)
     ) {
       field.classList.add("border-error");
-      successMsg.classList.add("d-none");
-      errorMsg.classList.remove("d-none");
-    } else {
-      errorMsg.classList.add("d-none");
-      successMsg.classList.remove("d-none");
-      field.value = "";
+      allFieldsValid = false;
     }
   });
+  // Validation to check if the state of all the fields are correct and setting the messages.
+  if (allFieldsValid) {
+    successMsg.classList.remove("d-none");
+    errorMsg.classList.add("d-none");
+    form.reset();
+  } else {
+    successMsg.classList.add("d-none");
+    errorMsg.classList.remove("d-none");
+  }
 }
 
 initializeFilter();
