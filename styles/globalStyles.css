@@ -325,18 +325,3 @@ body {
   padding: 8px 16px;
   font-size: 0.9rem;
 }
-
-/* Disabled State */
-.btn-adventure-primary:disabled,
-.btn-adventure-primary-medium:disabled,
-.btn-adventure-secondary:disabled,
-.btn-adventure-accent:disabled,
-.btn-adventure-highlight:disabled,
-.btn-adventure-danger:disabled,
-.btn-adventure-success:disabled,
-.btn-outline-adventure:disabled,
-.btn-outline-secondary-adventure:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-  transform: none !important;
-}

@@ -22,3 +22,16 @@ span {
   font-weight: 500;
   color: var(--color-primary-medium);
 }
+
+.card {
+  animation: fadeInPage 0.8s ease-in-out forwards;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.animation-container {
+  animation: fadeInPage 0.8s ease-in-out forwards;
+}
