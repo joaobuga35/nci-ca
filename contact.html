@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./styles/globalStyles.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/contact.css" />
+    <script src="./js/index.js" defer></script>
     <title>Contact us</title>
   </head>
   <body>
@@ -133,7 +134,11 @@
                     required
                   ></textarea>
                 </div>
-                <button type="submit" class="btn-adventure-primary w-100">
+                <button
+                  type="submit"
+                  onclick="handleSubmit(event)"
+                  class="btn-adventure-primary w-100"
+                >
                   Submit
                 </button>
               </form>
@@ -142,43 +147,19 @@
                 id="successMsg"
                 class="contact-feedback contact-feedback--success d-none"
               >
-                <span>&#10003;</span> Your message has been sent successfully!
+                <span>&#10003;</span> Your form has been sent successfully!
               </div>
               <div
                 id="errorMsg"
                 class="contact-feedback contact-feedback--error d-none"
               >
-                <span>&#10007;</span> Please fill in all required fields!
+                <span>&#10007;</span> Please fill in the required fields
+                properly!
               </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-
-    <script>
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          const name = document.getElementById("name").value.trim();
-          const email = document.getElementById("email").value.trim();
-          const phone = document.getElementById("phone").value.trim();
-          const queryType = document.getElementById("queryType").value;
-          const message = document.getElementById("message").value.trim();
-
-          const successMsg = document.getElementById("successMsg");
-          const errorMsg = document.getElementById("errorMsg");
-
-          if (!name || !email || !phone || !queryType || message.length < 20) {
-            successMsg.classList.add("d-none");
-            errorMsg.classList.remove("d-none");
-          } else {
-            errorMsg.classList.add("d-none");
-            successMsg.classList.remove("d-none");
-            this.reset();
-          }
-        });
-    </script>
   </body>
 </html>
