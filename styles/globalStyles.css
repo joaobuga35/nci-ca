@@ -8,6 +8,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap");
 
 /* Add Global styles to remove the default styles from my html file */
+/* I used a CSS reset and variables from my previous open-source projects to help to keep everything organised and re-use all the styles across the different pages. 
+Source: https://github.com/joaobuga35/Pet-info
+Source: https://github.com/joaobuga35/Git-Search/blob/main/styles/globalStyles.css */
 
 * {
   margin: 0;
